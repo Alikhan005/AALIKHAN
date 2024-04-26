@@ -1,0 +1,16 @@
+{% extends 'NURTAS/layout.html' %}
+{% block title %}
+    <title>Наши игроки</title>
+{% endblock %}
+{% block content %}
+<div class="button-container">
+    <h1>Добро пожаловать в Almaty Management University(ALMAU) </h1>
+    {% for player in players %}
+        <div>
+            <h2><a href="{% url 'details' player.id %}">{{ player.name }}</a></h2>
+            [<a href="{% url 'edit_player' player.id %}">Редактировать</a>]
+            [<a href="{% url 'delete_player' player.id %}">Удалить</a>]
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

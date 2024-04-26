@@ -1,0 +1,27 @@
+{% extends 'NURTAS/layout.html' %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'NURTAS/css/style.css' %}">
+
+{% block title %}
+    <title>Про игрока</title>
+{% endblock %}
+
+
+{% block content %}
+<div class="bat">
+        <h1>Подробная информация об студенте</h1>
+    <h2>{{ team.name }}</h2>
+    <ul>
+        <li>Город: {{ team.city }}</li>
+        <li>Возраст: {{ team.age }}</li>
+        <li>Школа: {{ team.school }}</li>
+        <li>Курс: {{ team.course }}</li>
+        <li>День рождения: {{ team.birthday }}</li>
+        <li>Специальность: {{ team.specialty }}</li>
+        <li>Баллы ЕНТ: {{ team.ent_score }}</li>
+        <li>Хобби: {{ team.hobby }}</li>
+    </ul>
+</div>
+
+{% endblock %}

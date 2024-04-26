@@ -1,0 +1,116 @@
+/* Kairat.css */
+
+/* Стили для контента */
+content {
+    color: rgb(143, 57, 35); /* Цвет текста - желтый */
+}
+
+/* Применение стилей к элементу ul */
+ul {
+    background-color: rgb(9, 129, 89); /* Цвет фона - желтый */
+    padding: 10px; /* Добавляем немного отступов для элемента ul */
+}
+
+/* Ваши остальные стили */
+body {
+    background: #d82929;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 25%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #072e1a;
+}
+
+aside img {
+    margin-top: 10px;
+    width: 50px;
+    float: left;
+}
+
+aside .logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+aside h3 {
+    margin-left: 10px;
+    font-size: 28px;
+    display: inline-block;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: all .4s ease;
+    text-decoration: underline; /* Добавляем подчёркивание */
+    text-decoration-color: #b8a55c; /* Устанавливаем цвет подчёркивания */
+}
+
+aside ul li:hover,
+aside ul a:hover {
+    color: #b3a981;
+    text-decoration: none;
+    transform: scale(1.03);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+main .button-container {
+    text-align: center; /* Выравнивание кнопок по центру */
+}
+
+main .button-container .button {
+    display: inline-block; /* Размещение кнопок в одной строке */
+    margin: 5px; /* Отступы между кнопками */
+    align-items: flex-start;
+}
+
+/* Стили для общих кнопок */
+main .button {
+    height: 60px;
+    width: 250px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: #fff; /* Изменяем цвет текста на белый */
+}
